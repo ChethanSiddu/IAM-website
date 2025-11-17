@@ -1,11 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title> IAM_Siddu </title>
+  <meta charset="UTF-8" />
+  <title>IAM | Chetan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    nav a {
+      color: #e5e7eb;
+      margin-right: 1rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1, h2, h3 {
+      color: #111827;
+    }
+    section {
+      background: white;
+      margin-bottom: 1.5rem;
+      padding: 1.2rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid #d1d5db;
+      font-size: 0.8rem;
+      margin: 0.2rem 0.3rem 0.2rem 0;
+      background: #f9fafb;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 0.8rem;
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to Siddu’s IAM Website</h1>
-    <p>This is my first webpage.</p>
+  <header>
+    <div class="container">
+      <h1>Chetan – Identity &amp; Access Management</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#iam-overview">IAM Overview</a>
+        <a href="#sailpoint">SailPoint IDN</a>
+        <a href="#okta">Okta</a>
+        <a href="#entra">Entra ID</a>
+        <a href="#coding">Coding</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Chetan. I work on Identity &amp; Access Management (IAM) with tools like
+        SailPoint IdentityNow, Okta, and Microsoft Entra ID. This website is my
+        personal space to share notes, tutorials, and code examples.
+      </p>
+    </section>
+
+    <section id="iam-overview">
+      <h2>IAM Overview</h2>
+      <p>
+        IAM (Identity &amp; Access Management) makes sure the right people get the
+        right access to the right applications at the right time.
+      </p>
+      <div>
+        <span class="tag">IGA</span>
+        <span class="tag">Access Governance</span>
+        <span class="tag">SSO</span>
+        <span class="tag">Zero Trust</span>
+        <span class="tag">Lifecycle Management</span>
+      </div>
+    </section>
+
+    <section id="sailpoint">
+      <h2>SailPoint IdentityNow (IDN)</h2>
+      <p>Here I will add detailed notes and labs for IDN.</p>
+      <ul>
+        <li>Basics: Identities, Sources, Entitlements, Access Profiles, Roles</li>
+        <li>Hands-on: Identity Profiles, Source onboarding, Access Requests</li>
+        <li>APIs: Using Postman and PATs to call IDN APIs</li>
+      </ul>
+    </section>
+
+    <section id="okta">
+      <h2>Okta</h2>
+      <p>Notes and examples for Okta Administration and Development.</p>
+      <ul>
+        <li>Users, Groups, Applications, Sign-on policies</li>
+        <li>SSO with SAML / OIDC</li>
+        <li>Lifecycle flows and automation</li>
+      </ul>
+    </section>
+
+    <section id="entra">
+      <h2>Microsoft Entra ID</h2>
+      <p>Content for Entra ID (Azure AD) and Entra ID Governance.</p>
+      <ul>
+        <li>Tenants, users, groups, roles</li>
+        <li>Conditional Access &amp; MFA</li>
+        <li>Access reviews, entitlement management</li>
+      </ul>
+    </section>
+
+    <section id="coding">
+      <h2>Coding &amp; Automation</h2>
+      <p>
+        In this section I will share API calls, scripts, and automation ideas for IAM.
+      </p>
+      <ul>
+        <li>Postman collections for IDN, Okta, and Entra APIs</li>
+        <li>Python / PowerShell scripts for user and access automation</li>
+        <li>JSON examples and request bodies</li>
+      </ul>
+      <pre><code>// Example placeholder
+// Soon: API example for listing identities from SailPoint IDN
+      </code></pre>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        In future I will add my LinkedIn / email here for mentoring, training, and consulting.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Chetan • Identity &amp; Access Management
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
